@@ -1,5 +1,5 @@
 id: ook_blocks_ook_mod
-label: ook_mod
+label: OOK Mod
 category: '[OOK_Blocks]'
 
 templates:
@@ -13,10 +13,10 @@ templates:
 #     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
 #     * default
 parameters:
-- id: parametername_replace_me
-  label: FIX ME:
-  dtype: string
-  default: You need to fill in your grc/ook_blocks_ook_mod.block.yaml
+  #- id: parametername_replace_me
+  #label: FIX ME:
+    #dtype: string
+    #default: You need to fill in your grc/ook_blocks_ook_mod.block.yaml
 #- id: ...
 #  label: ...
 #  dtype: ...
@@ -29,16 +29,16 @@ parameters:
 #      * vlen (optional - data stream vector length. Default is 1)
 #      * optional (optional - set to 1 for optional inputs. Default is 0)
 inputs:
-#- label: ...
-#  domain: ...
-#  dtype: ...
+- label: in
+  domain: stream
+  dtype: int
 #  vlen: ...
 #  optional: ...
 
 outputs:
-#- label: ...
-#  domain: ...
-#  dtype: ...
+- label: out
+  domain: stream
+  dtype: int
 #  vlen: ...
 #  optional: ...
 
