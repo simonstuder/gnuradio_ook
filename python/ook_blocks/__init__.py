@@ -21,4 +21,5 @@ except ModuleNotFoundError:
 
 # import any pure python here
 from .ook_demod_ui import ook_demod_ui
+from .ook_mod import ook_mod
 #

@@ -22,7 +22,8 @@ add_subdirectory(bindings)
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    ook_demod_ui.py DESTINATION ${GR_PYTHON_DIR}/gnuradio/ook_blocks
+    ook_demod_ui.py
+    ook_mod.py DESTINATION ${GR_PYTHON_DIR}/gnuradio/ook_blocks
 )
 
 ########################################################################
@@ -39,3 +40,4 @@ add_custom_target(
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}
           ${CMAKE_BINARY_DIR}/test_modules/gnuradio/ook_blocks/
 )
+GR_ADD_TEST(qa_ook_mod ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_ook_mod.py)

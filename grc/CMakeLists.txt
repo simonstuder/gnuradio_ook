@@ -7,5 +7,6 @@
 #
 
 install(FILES
-    ook_blocks_ook_demod_ui.block.yml DESTINATION share/gnuradio/grc/blocks
+    ook_blocks_ook_demod_ui.block.yml
+    ook_blocks_ook_mod.block.yml DESTINATION share/gnuradio/grc/blocks
 )

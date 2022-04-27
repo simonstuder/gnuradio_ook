@@ -1,10 +1,10 @@
-id: ook_blocks_ook_demod_ui
-label: OOK Demod
+id: ook_blocks_ook_mod
+label: ook_mod
 category: '[OOK_Blocks]'
 
 templates:
   imports: from gnuradio import ook_blocks
-  make: ook_blocks.ook_demod_ui()
+  make: ook_blocks.ook_mod()
 
 #  Make one 'parameters' list entry for every parameter you want settable from the GUI.
 #     Keys include:
@@ -12,11 +12,11 @@ templates:
 #     * label (label shown in the GUI)
 #     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
 #     * default
-# parameters:
-# - id: parametername_replace_me
-# label: FIX ME:
-# dtype: string
-# default: You need to fill in your grc/ook_blocks_ook_demod_ui.block.yaml
+parameters:
+- id: parametername_replace_me
+  label: FIX ME:
+  dtype: string
+  default: You need to fill in your grc/ook_blocks_ook_mod.block.yaml
 #- id: ...
 #  label: ...
 #  dtype: ...
@@ -28,34 +28,19 @@ templates:
 #      * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
 #      * vlen (optional - data stream vector length. Default is 1)
 #      * optional (optional - set to 1 for optional inputs. Default is 0)
-#inputs:
+inputs:
 #- label: ...
 #  domain: ...
 #  dtype: ...
 #  vlen: ...
 #  optional: ...
-inputs:
-- label: "in"
-  domain: stream
-  dtype: byte
-  optional: false
-
 
 outputs:
-- label: "zeros"
-  domain: stream
-  dtype: int
+#- label: ...
+#  domain: ...
+#  dtype: ...
 #  vlen: ...
-  optional: true
-- label: "ones"
-  domain: stream
-  dtype: int
-#  vlen: ...
-  optional: true
-    #- label: "debug"
-    #domain: stream
-    #dtype: byte
-    #optional: true
+#  optional: ...
 
 #  'file_format' specifies the version of the GRC yml format used in the file
 #  and should usually not be changed.
